@@ -5,10 +5,8 @@
 }
 
 header{
-    padding: 20px 35px;
-    background-color: rgba(75, 110, 139, 0.089);
-    display: flex;
-    justify-content: space-between;
+    padding: 0, 0, 20px;
+    background-color: white;
     flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
@@ -16,18 +14,36 @@ header{
     background-attachment: fixed;
     background-position: 80%;
     z-index: 9999;
+    width: 100%;
 }
 
 .header nav {
-    padding-top: 15px;
     margin-right: 20px;
-    float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
     font-size: 20px;
+    float: right;
 }
 .header nav ul li {
-    display: inline-block;
     margin-left: 25px;
+    display: inline-block;
+}
+
+header a {
+    color: #596e79;
+    font-size: large;
+    font-weight: bolder;
+}
+
+header h1 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+}
+
+header div {
+    width: 20%;
+    background-color: #596e79;
+    padding-left: 2%;
+    float: left;
 }
 
 /*Hero*/
@@ -38,4 +54,28 @@ header{
     margin-bottom: 50px;
     background-size: cover;
     background-position: center;
+    display: flex;
 }
+
+/*End Hero*/
+
+.about-me {
+    display: flex;
+    padding-right: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+    color: #596e79;
+}
+
+.about-me .about {
+    flex-direction: column;
+    width: 10%;
+    margin-left: 100px;
+    border-right: solid 2px #596e79;
+    font-size: x-large;
+}
+
+.about-me .paragraph {
+    margin-left: 5%;
+}
+
+
