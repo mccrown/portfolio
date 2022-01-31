@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 20px 35px;
+    background-color: rgba(75, 110, 139, 0.089);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+    font-size: 20px;
+}
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/*Hero*/
+.hero {
+    height: 200px;
+    width: 100%;
+    background-image: url(../images/pexels-trace-hudson-2529973.jpg);
+    margin-bottom: 50px;
+    background-size: cover;
+    background-position: center;
+}
