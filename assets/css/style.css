@@ -20,8 +20,6 @@ header{
     padding: 0, 0, 20px;
     background-color: white;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
     top: 0%;
     background-attachment: fixed;
     background-position: 80%;
@@ -29,22 +27,31 @@ header{
     width: 100%;
 }
 
+header div {
+    background-color: #596e79;
+    padding-left: 2%;
+    display: flex;
+    flex-shrink: 1;
+    justify-content: center;
+}
+
 .header nav {
     margin-right: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
     font-size: 20px;
-    float: right;
-}
-.header nav ul li {
     margin-left: 25px;
-    display: inline-block;
+    display: flex;
+    margin-left: 25px;
+    justify-content: center;
 }
 
+
 header a {
-    color: #596e79;
+    color: var(--font-color);
     font-size: large;
     font-weight: bolder;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
 }
 
 header h1 {
@@ -56,10 +63,10 @@ header h1 {
 }
 
 header div {
-    width: 20%;
     background-color: #596e79;
     padding-left: 2%;
-    float: left;
+    display: flex;
+    flex-shrink: 1;
 }
 
 nav a:hover {
@@ -73,7 +80,6 @@ nav a:hover {
     height: 200px;
     width: 100%;
     background-image: url(../images/pexels-trace-hudson-2529973.jpg);
-    margin-bottom: 50px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -100,6 +106,23 @@ nav a:hover {
 .about h2 {
     font-weight: bolder;
     border-right: solid;
+}
+
+.about div {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 200px;
+    float: inline-start;
+}
+.about img {
+    width: 100px;
+    height: auto;
+}
+
+.p p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
 }
  /*projects*/
 main {
@@ -168,7 +191,7 @@ footer {
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     font-family: var(--font-family);
 }
 
@@ -180,7 +203,8 @@ footer {
 }
 
 .info {
-    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
     flex: 1;
     background-color: var(--font-color);
     color: white;
@@ -188,6 +212,7 @@ footer {
     box-shadow: 10px 10px 5px #aaaaaa;
     text-align: center;
     justify-content: center;
+    background-size: auto;
 }
 
 .info a {
