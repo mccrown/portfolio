@@ -65,6 +65,7 @@ header div {
 nav a:hover {
     background-color: #596e79;
     color: white;
+    border-radius: 50px;
 }
 
 /*Hero*/
@@ -142,14 +143,53 @@ main {
     background-color: var(--font-color);
 }
 
+
 .cards > img, .card > img {
     width: 100%;
 }
 
-.card > header, .cards > header {
+.card > header, .cards > header { 
     text-align: center;
     font-weight: bold;
     padding: 20px;
     background-color: var(--font-color);
+    color: white;
+}
+
+/*footer*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-me {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: var(--font-family);
+}
+
+.contact-me h2 {
+    font-weight: bolder;
+    border-right: solid;
+    color: var(--font-color);
+    font-family: var(--font-family);
+}
+
+.info {
+    margin: 20px;
+    flex: 1;
+    background-color: var(--font-color);
+    color: white;
+    border-radius: 50px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    text-align: center;
+    justify-content: center;
+}
+
+.info a {
     color: white;
 }
